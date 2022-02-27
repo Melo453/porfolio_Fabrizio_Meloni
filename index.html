@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <title>Fabrizio Meloni</title>
+        <link rel="stylesheet" href="css/styles-dist.css">
+        <link rel="stylesheet" href="imports/app-dist.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        
+        <script src="js/jquery-3.6.0.min.js"></script>
+
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header class="header-menu">
+            <nav class="menu">
+                <label class="menu__logo"> 
+                    <a class="desplazar" title="Inicio" href="#inicio">
+                        <span>F</span>M
+                    </a>
+                </label>
+                <ul class="menu__items">
+                    <li title="Inicio" class="inicio active">
+                        <a class="responsive desplazar"href="#inicio" >Inicio</a>
+                    </li>
+                    <li title="Principal" class="principal">
+                        <a class="responsive desplazar" href="#principal">Sobre mi</a>
+                    </li>
+                    <li title="Portafolio" class="portafolio">
+                        <a class="responsive desplazar" href="#portafolio">Portafolio</a>
+                        </li>
+                    <li title="Contacto" class="contacto">
+                        <a class="responsive desplazar" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <span class="btn__menu">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </nav>
+        </header>
+        
+        <main id="main">
+            <section class="width section-inicio"id="inicio">
+                <div class="main section-inicio" >
+                    <div class="main__social-icon">
+                        <a href="https://www.linkedin.com/in/fabrizio-meloni-4126711b7/"  target="_blank" >
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Melo453" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_fabrimeloni_/" target="_blank" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="main__content">
+                        <div class="main__text">
+                            <h1 class="main__h1"><span>Fabrizio</span> Meloni </h1>
+                            <p class="main__p">Full Stack Developer</p>
+                            <a class="main__a" target="_blank" href="CV+Fabrizio+Meloni.pdf">
+                                <button  class="main__button" >
+                                    ver curriculum-cv
+                                </button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img class="main__img" src="img/Foto de fabri.jpg" alt="Fabrizio Meloni">
+                    </div>
+                </div>
+            </section>
+            <section class=" width section height" id="principal">
+                <div class="info">
+                    <h2 class="info__h2">Sobre mi</h2>
+                    <div class="info__container">
+                        <div class="info__about">
+                            <p class="info__p">¡Hola! como ya habras visto me llamo <span>Fabrizio</span> Meloni, soy un aficionado por la tecnología y me gusta mucho picar teclas. <br> En mis tiempos libres aparte de programar disfruto mucho de hacer gimnasia y armar cubos de rubik.  </p>
+                            
+                        </div>
+                        <div class="info__habilidades">
+                            <div class="habilidad">
+                                <h1 >Habilidades</h1>
+                            </div>
+                            <img  class="imagen__html imagen__rotate"src="img/html.png" alt="html5">
+                            <img  class="imagen__css imagen__rotate"src="img/css.png" alt="css" >
+                            <img  class="imagen__express imagen__rotate"src="img/express.png" alt="express">
+                            <img  class="imagen__git imagen__rotate"src="img/git.png" alt="git">
+                            <img  class="imagen__github imagen__rotate"src="img/github.png" alt="github">
+                            <img  class="imagen__js imagen__rotate"src="img/js.png" alt="js">
+                            <img  class="imagen__nodejs imagen__rotate"src="img/nodejs.png" alt="nodejs">
+                            <img  class="imagen__mysql imagen__rotate"src="img/mysql.png" alt="mysql">
+                            <img  class="imagen__mongodb imagen__rotate"src="img/mongodb.png" alt="mongodb">
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <section class=" width section height" id="portafolio">
+                <div class="portafolio" >
+                    <div class="portafolio__heading">
+                        <h2>Portafolio</h2>
+                    </div>
+                        <div class="portafolio__grid">
+                            <div class="card">
+                                <div class="card__img">
+                                </div>
+                                <div class="card__title">
+                                    <h2>Descripcion proyecto</h2>
+                                </div>
+                                <div class="card__proyects-links">
+                                    <div class="cuadrado"></div>
+                                    <a href="" >
+                                        <i class="fab fa-github"></i>
+                                        Repositorio
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-globe-americas"></i>
+                                        Pagina
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__img">
+                                </div>
+                                <div class="card__title">
+                                    <h2>Descripcion proyecto</h2>
+                                </div>
+                                <div class="card__proyects-links">
+                                    <a href="" >
+                                        <i class="fab fa-github"></i>
+                                        Repositorio
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-globe-americas"></i>
+                                        Pagina
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__img">
+                                </div>
+                                <div class="card__title">
+                                    <h2>Descripcion proyecto</h2>
+                                </div>
+                                <div class="card__proyects-links">
+                                    <a href="" >
+                                        <i class="fab fa-github"></i>
+                                        Repositorio
+                                    </a>
+                                    <a href="">
+                                        <i class="fas fa-globe-americas"></i>
+                                        Pagina
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class=" width section height" id="contacto" >
+                <div class="contact">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="container">
+                    <div class="container__icons">
+                        <div class="container__icons-block">
+                            <i class="fas fa-phone"> Llamame</i>
+                            <h2>351-2623900</h2>
+                        </div>
+                        <div class="container__icons-block">
+                            <i class="fas fa-envelope"> Contactame</i>
+                            <h2>fabrimeloni1@gmail.com</h2>
+                        </div>
+                        
+                    </div>
+                    <div class="container__contact">
+                        <h2>Enviame un mensaje...</h2>
+                        <form class="formulario" action="#">
+                            <input class="name" type="text" placeholder="Nombre" required>
+                            <input class="email" type="email" placeholder="Email" required>
+                            <textarea class="msg"  placeholder="Tu mensaje..."></textarea>
+                            <button class="btn-submit" type="submit">Enviar mensaje</button>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </section>
+        </main>
+
+        <footer>
+            <div class="width footer">
+                <div class="footer__content">
+                    <h2>Fabrizio Meloni</h2>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/fabrizio-meloni-4126711b7/"  target="_blank" >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Melo453" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_fabrimeloni_/" target="_blank" >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <h5 class="h5">Hecho con <span>❤</span> en Argentina</h5>
+            </div>
+            
+        </footer>
+        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fas fa-arrow-up scrollup__icon"></i>
+        </a>
+
+        <script src="js/app.js" ></script>
+    </body>
+</html>
