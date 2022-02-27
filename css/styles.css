@@ -5,12 +5,14 @@
 {
     width:100%;
 }
+
+/*Menu*/
+
 .header-menu{
     position:fixed;
     z-index: 100;
     width:100%;
 }
-
 
 .menu{
     background-color: var(--color-secundario);
@@ -68,26 +70,26 @@ ul.show{
     left: 0;
 }
 
+/*Inicio*/
+
 .section-inicio{
     height: 100vh;
     overflow:hidden;
     background-color: #222831;
 }
+
 .main{
     display: flex;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     justify-content:space-evenly;
 }
 
 .main__social-icon{  
     display:flex;
     flex-direction: column;
-    
     font-size: 1.5rem;
-    
 }
 .main__social-icon a{
     transition: 0.5s;
@@ -95,7 +97,6 @@ ul.show{
 }
 
 .main__social-icon a:hover{
-    
     transform: translateY(-7px);
     color: #00ADB5;
 }
@@ -114,7 +115,6 @@ ul.show{
 
 .main__h1{
     font-size:  2.3em;
-    
 }
 
 .main h1 span{
@@ -151,6 +151,8 @@ ul.show{
     width: 100%;
 }
 
+/*Sobre*/
+
 .info{
     width:100%;
     max-width: 1200px;
@@ -158,9 +160,7 @@ ul.show{
     padding: 0 20px;
 }
 
-.info__h2{
-    text-align: left;
-}
+
 
 .info__about{
     text-align: left;
@@ -175,32 +175,29 @@ ul.show{
     
 }
 
-.info__habilidades{
+.info__img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.habilidad{
+.info__h2{
     text-align: left;
     font-size:  2.3em;
-    grid-column: span 3;
-    grid-column-start: span 3;
-    grid-column-end: auto;
+    margin-bottom: 35px;
+}
+
+.info__text{
+    text-align: left;
+    font-size:  2.3em;
     margin-bottom: 30px;
 }
-
-.info__h2{
-    font-size:  2.3em;
-}
-
 .imagen__rotate{
     transition: 0.6s;
 }
 
 .info__p{
     font-size: 1.3em;
-    
 }
 .info__p span{
     color: #00ADB5;
@@ -283,7 +280,6 @@ ul.show{
 .portafolio__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    gap: 20px;
     
 }
 
@@ -291,6 +287,10 @@ ul.show{
     width: 300px;
     background-color:  var(--color-secundario);
     height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 
 
 }
@@ -392,7 +392,7 @@ ul.show{
 .btn-submit:hover{
     box-shadow: none;
     background-color: var(--color-primario);
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 
@@ -416,6 +416,14 @@ ul.show{
     justify-content: space-evenly;
     width: 300px;
     margin: 1em 0 .6em;
+    
+}
+
+.footer__social a{
+    transition: 0.5s;
+}
+.footer__social a:hover{
+    transform: translateY(-8px);
 }
 
 .footer__social i,
@@ -818,7 +826,7 @@ ul.show{
 @media screen and (max-width:1020px){
     .portafolio__grid{
         grid-template-columns: 1fr 1fr  ;
-        gap: 20px;
+        
         
     }
     
@@ -827,7 +835,7 @@ ul.show{
 @media screen and (max-width:700px){
     .portafolio__grid{
         grid-template-columns: 1fr;
-        gap: 20px;
+        
         
     }
     .card{
