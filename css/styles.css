@@ -965,7 +965,11 @@ ul.show{
     }
 }
 
-
+@media screen  and (max-width:332px){
+    .h5{
+        font-size: 1.1rem;
+    }
+}
 
 @media screen  and (max-width:315px){
     .h5{
