@@ -1,6 +1,8 @@
 @import url(/imports/app-dist.css);
 
-
+body{
+    transition: .3s ease all;
+}
 #main
 {
     width:100%;
@@ -75,7 +77,7 @@ ul.show{
 .section-inicio{
     height: 100vh;
     overflow:hidden;
-    background-color: #222831;
+    background-color: var(--color-secundario);
 }
 
 .main{
@@ -277,6 +279,7 @@ ul.show{
     background-color: #393E46;
 }
 
+
 .portafolio__grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -362,6 +365,10 @@ ul.show{
     flex-direction: column;
     width: 30vw;
     margin-top: 2em;
+}
+
+.formulario::placeholder{
+    color: #000;
 }
 
 .formulario input{
@@ -460,11 +467,61 @@ ul.show{
     bottom: 5rem;
 }
 
+/*Modo oscuro*/
+
+.switch{
+    background: #343D5B;
+    border-radius: 62.5em;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    top: .5em;
+    
+}
+
+.switch span{
+    width: 1.9em;
+    height: 1.9em;
+    line-height: 1.9em;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.switch::after{
+    content: "";
+    width: 1.9em;
+    height: 1.9em;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 6.25em;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.active-switch{
+    background: orange;
+    color: #000;
+}
+
+.active-switch::after{
+    right: 0;
+    left: unset;
+}
 
 
+.dark{
+    --color-primario: #222831;
+    --color-secundario: #EEEEEE;
+}
 
-
-
+body.dark .section{
+    background-color: #dddddd;
+}
 /*Responsive*/
 
 /* inicio*/
@@ -489,13 +546,40 @@ ul.show{
     
 }
 
-@media screen and (max-width: 977px){
+@media screen  and (max-width: 1262px){
+    .main__content,
+    .main__social-icon{
+        margin-top: 7rem; 
+    }
+    
+}
+
+@media screen and (max-width: 1088px){
     .menu__items li a
     {
         font-size:1em;        
     }
+
+    .switch{
+        font-size:.9em;  
+    }
     
 }
+
+@media screen and (max-width: 1042px){
+    .menu__items li a
+    {
+        font-size:.8em;        
+    }
+}
+
+@media screen and (max-width: 1042px){
+    .switch{
+        font-size:.8em;  
+    }
+}
+
+
 
 @media screen  and (max-width: 762px){
     .main__social-icon{
@@ -676,7 +760,7 @@ ul.show{
 
 }
 
-@media screen  and (max-width:896px){
+@media screen  and (max-width:914px){
 
     .menu__items li{
         margin: 0 20px;
@@ -685,7 +769,7 @@ ul.show{
 
 }
 
-@media screen  and (max-width:859px){
+@media screen  and (max-width:861px){
     .menu__items li{
         margin: 0 15px;
         
@@ -742,14 +826,13 @@ ul.show{
     
     .menu{
         height:65px;
-        
     }
     .btn__menu{
         display: inline-block;
     }
     .menu__items{
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background: #393E46;
         top: 65px;
@@ -777,6 +860,9 @@ ul.show{
     .menu__logo{
         font: 25px;
         padding-left: 35px;
+    }
+    .switch{
+        margin: 0 auto;
     }
 }
 
@@ -903,6 +989,12 @@ ul.show{
         width: 340px;
     }
 }
+
+@media screen  and (max-width:356px){
+    .scrollup{
+        padding: .1rem .3rem;
+    }
+}
 @media screen  and (max-width:341px){
     .main__img{
         width: 290px;
@@ -948,11 +1040,23 @@ ul.show{
     
 }
 
-
-
-
-
-
+@media screen  and (max-width:271px){
+    .info__p{
+        font-size: .8em;
+    }
+    .info__h2{
+        font-size: 1.8em;
+    }
+    .info__text{
+        font-size: 1.8em;
+    }
+    .portafolio__heading h2{
+        font-size: 1.8em;
+    }
+    .contact h2{
+        font-size: 1.8em;
+    }
+}
 @media screen  and (max-width:332px){
     .imagen__github{
         padding-left: 0px;
@@ -985,9 +1089,22 @@ ul.show{
     }
 }
 
+@media screen  and (max-width:307px){
+    .scrollup{
+        right: .2rem;
+    }
+    
+}
+
 @media screen  and (max-width:300px){
     .footer__social{
         width: 250px;
+    }
+}
+
+@media screen  and (max-width:287px){
+    .info__img{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -997,6 +1114,7 @@ ul.show{
     }
     .card{
         width: 150px;
+        gap: 1em;
     }
     .card__title{
         font-size: .5em;
@@ -1006,6 +1124,11 @@ ul.show{
     }
 }
 
+@media screen  and (max-width:270px){
+    .menu__items li a{
+        font-size: 1em;
+    }
+}
 
 
 
@@ -1036,11 +1159,20 @@ ul.show{
         font-size: .7rem;
     }
     .formulario{
-        width: 60%;
+        width: 70%;
     }
     .btn-submit{
         font-size: .7rem;
     }
+
+    .info__img{
+        grid-template-columns: 1fr ;
+    }
+
+    .container__icons{
+        font-size: .7em;
+    }
 }
+
 
 
