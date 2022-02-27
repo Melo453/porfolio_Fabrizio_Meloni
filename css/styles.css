@@ -71,7 +71,7 @@ ul.show{
 .section-inicio{
     height: 100vh;
     overflow:hidden;
-    background-color: aqua;
+    background-color: #222831;
 }
 .main{
     display: flex;
