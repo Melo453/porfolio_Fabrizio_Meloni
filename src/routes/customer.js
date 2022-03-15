@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const router = Router();
 
 
-router.get('',(req,res) =>{
-    res.render('index');
+router.get('/',(req,res) =>{
+    res.render('index.html');
     
 });
 
